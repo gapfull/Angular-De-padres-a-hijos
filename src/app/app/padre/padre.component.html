@@ -1,0 +1,12 @@
+<div [ngStyle]="{'color':'black','background-color':'red','text-align':'center'}">
+
+  <p>padre works!</p>
+<input #padreinput (keyup)="cargamosLetra(padreinput.value)">
+  <p>{{inputText}}</p>
+  <div [ngStyle]="{'color':'black','background-color':'#87CEEB','text-align':'center'}">
+    <app-hijo [inputText]="inputText"></app-hijo>
+    <p>Y yo tu hijo</p>
+  </div>
+
+  <p>y otra vez tu padre!</p>
+</div>
